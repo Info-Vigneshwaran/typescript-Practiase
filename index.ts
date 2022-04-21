@@ -7,6 +7,9 @@ appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 class Name {
   name: string;
   constructor() {
-    this.name = 12;
+    this.name = 'test';
   }
 }
+
+const name_cls = new Name();
+console.log(name_cls.name);

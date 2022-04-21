@@ -1,5 +1,6 @@
 // Import stylesheets
 import './style.css';
+import './Employee.ts';
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
@@ -12,4 +13,3 @@ class Name {
 }
 
 const name_cls = new Name();
-console.log(name_cls.name);

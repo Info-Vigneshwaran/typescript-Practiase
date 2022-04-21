@@ -1,21 +1,20 @@
 class Employee {
-  private id;
   id: number;
-  constructor() {
-    this.id = '';
-  }
-  private details(): string {
-    return `Id ==> ${this.id}`;
-  }
-}
-let employee = new Employee();
-console.log(employee);
-
-class Name {
   name: string;
-  constructor() {
-    this.name = 'test';
+  age: number;
+  constructor(id, name, age) {
+    this.id = id;
+    this.name = name;
+    this.age = age;
+  }
+  public details(): object {
+    let emp_details = {
+      id: this.id,
+      name: this.name,
+      age: this.age,
+    };
+    return emp_details;
   }
 }
-
-const name_cls = new Name();
+let employee = new Employee(3, 'vignesh', 25);
+console.log(employee.details());

@@ -17,4 +17,25 @@ class Employee {
   }
 }
 let employee = new Employee(3, 'vignesh', 25);
+
+class Manager extends Employee {
+  // jobtype: string;
+  private jobtype;
+  constructor(id: number, name: string, age: number, jobtype: string) {
+    super(id, name, age);
+    this.jobtype = jobtype;
+  }
+  public manager_details(): object {
+    let manager_details = {
+      id: this.id,
+      name: this.name,
+      age: this.age,
+      jobtype: this.jobtype,
+    };
+    return manager_details;
+  }
+}
 console.log(employee.details());
+
+let manager = new Manager(3, 'vignesh', 25, 'manager');
+console.log(manager.manager_details());

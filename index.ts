@@ -5,7 +5,7 @@ import './Example1.ts';
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS</h1>`;
+appDiv.innerHTML = `<h1>JS Tutorial</h1>`;
 class Name {
   name: string;
   constructor() {
